@@ -1,4 +1,4 @@
-# 🛡️ CHAUKAS — India's Intelligent Road Safety Command System
+# 🛡️ suraksha ai — India's Intelligent Road Safety Command System
 
 > **Road Safety Hackathon 2026 | IIT Madras**
 > *AI-Powered Accident Detection, Real-Time Blackspot Mapping, and Emergency Dispatch*
@@ -9,13 +9,13 @@
 
 India witnesses over **1.5 lakh road accident fatalities annually** — one death every 3.5 minutes. The primary causes include delayed emergency response, lack of real-time accident data, absence of severity assessment at the reporting stage, and poor coordination between traffic authorities and emergency responders. The critical "**Golden Hour**" — the first 60 minutes after an accident — is lost due to fragmented systems.
 
-**Chaukas** solves this by providing a **unified, AI-driven command interface** that detects accidents, assesses severity in real-time using Gemini AI, and dispatches emergency resources within seconds — all from a single platform.
+**suraksha ai** solves this by providing a **unified, AI-driven command interface** that detects accidents, assesses severity in real-time using Gemini AI, and dispatches emergency resources within seconds — all from a single platform.
 
 ---
 
-## 🎯 What is Chaukas?
+## 🎯 What is suraksha-ai?
 
-**Chaukas** (Hindi: चौकस — meaning "Alert" / "Vigilant") is an end-to-end **Intelligent Road Safety Command System** built for India's highways and urban roads. It combines:
+**suraksha ai** ( meaning "Alert" / "Vigilant") is an end-to-end **Intelligent Road Safety Command System** built for India's highways and urban roads. It combines:
 
 - 🤖 **AI-Powered Severity Analysis** — Gemini Vision AI analyzes accident photos to classify severity and recommend resources
 - 📍 **Real-Time Incident Mapping** — Interactive 3D globe and Leaflet maps for live incident tracking
@@ -256,7 +256,7 @@ Chaukas/
 
 ## 🔐 Offline-First Design
 
-Chaukas is designed to work **completely offline** — no cloud database, no external API keys required for core functionality:
+suraksha ai is designed to work **completely offline** — no cloud database, no external API keys required for core functionality:
 
 - **Database**: All data is stored in `backend/local_db.json` using a custom MockSupabase engine
 - **Media Storage**: Images, videos, and audio are saved to `backend/uploads/` and served via FastAPI static files
@@ -312,4 +312,4 @@ This ensures **judges can run the full application** by simply:
 
 This project was built for the **Road Safety Hackathon 2026** organized by **IIT Madras**.
 
-© 2026 CHAUKAS. All Rights Reserved.
+© 2026 suraksha ai. All Rights Reserved.
