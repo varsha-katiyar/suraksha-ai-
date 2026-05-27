@@ -330,6 +330,40 @@ except ImportError as e:
         print(f"CRITICAL: Pothole Router completely failed: {e2}")
 
 
+
+# Feature 11: Real-Time Driver Alert System
+try:
+    from Feature11_DriverAlert.alert_router import router as driver_alert_router
+    app.include_router(driver_alert_router, prefix="/api")
+    print("SUCCESS: Driver Alert Router mounted")
+except Exception as e:
+    print(f"FAILED to mount Driver Alert Router: {e}")
+
+# Feature 12: Crowdsourced Witness Reporting
+try:
+    from Feature12_WitnessReport.witness_router import router as witness_router
+    app.include_router(witness_router, prefix="/api")
+    print("SUCCESS: Witness Report Router mounted")
+except Exception as e:
+    print(f"FAILED to mount Witness Report Router: {e}")
+
+# Feature 13: FIR & Insurance Assistant
+try:
+    from Feature13_FIR_Assistant.fir_router import router as fir_router
+    app.include_router(fir_router, prefix="/api")
+    print("SUCCESS: FIR Assistant Router mounted")
+except Exception as e:
+    print(f"FAILED to mount FIR Router: {e}")
+
+# Feature 17: Road Scar
+try:
+    from Feature17_RoadScar.road_scar_router import router as road_scar_router
+    app.include_router(road_scar_router, prefix="/api")
+    print("SUCCESS: Road Scar Router mounted")
+except Exception as e:
+    print(f"FAILED to mount Road Scar Router: {e}")
+
+
 @app.get("/")
 @app.get("/api")
 async def root(request: Request):

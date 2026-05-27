@@ -41,7 +41,10 @@ import CrashDetectionPage from './pages/CrashDetectionPage';
 import RepairEstimatorPage from './pages/RepairEstimatorPage';
 import NightWatchPage from './pages/NightWatchPage';
 import MedicalCardPage from './pages/MedicalCardPage';
-
+import DriverAlertPage from './pages/DriverAlertPage';
+import WitnessReportPage from './pages/WitnessReportPage';
+import FIRAssistantPage from './pages/FIRAssistantPage';
+import RoadScarPage from './pages/RoadScarPage';
 // Context
 import { AuthProvider, useAuth } from './context/AuthContext';
 import { LocationProvider } from './context/LocationContext';
@@ -297,6 +300,10 @@ const MainApp = () => {
           <Route path="/repair-estimator" element={<ProtectedRoute><RepairEstimatorPage /></ProtectedRoute>} />
           <Route path="/night-watch"      element={<ProtectedRoute><NightWatchPage /></ProtectedRoute>} />
           <Route path="/medical-card"     element={<ProtectedRoute><MedicalCardPage /></ProtectedRoute>} />
+          <Route path="/driver-alert"     element={<ProtectedRoute><DriverAlertPage /></ProtectedRoute>} />
+          <Route path="/witness-report"   element={<WitnessReportPage />} />
+          <Route path="/fir-assistant"    element={<ProtectedRoute><FIRAssistantPage /></ProtectedRoute>} />
+          <Route path="/road-scar"        element={<ProtectedRoute><RoadScarPage /></ProtectedRoute>} />
         </Routes>
       </div>
     </div>

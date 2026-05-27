@@ -5,7 +5,7 @@ import {
     Shield, LayoutDashboard, Activity, BarChart2, TrendingUp,
     Target, AlertTriangle, Users, Newspaper, FileText,
     Zap, Moon, Car, Wrench, ChevronRight, LogOut, User,
-    MapPin, ChevronDown
+    MapPin, ChevronDown, Eye, ShieldAlert
 } from 'lucide-react';
 
 const NAV = [
@@ -21,7 +21,11 @@ const NAV = [
     {
         section: 'Safety & Features',
         items: [
+            { path: '/road-scar',        icon: ShieldAlert,   label: 'Road Scar',         badge: 'NEW' },
             { path: '/hotspot',          icon: Target,        label: 'Hotspots' },
+            { path: '/driver-alert',     icon: Activity,      label: 'Driver Alert',      badge: 'NEW' },
+            { path: '/witness-report',   icon: Eye,           label: 'Witness Report',    badge: 'NEW' },
+            { path: '/fir-assistant',    icon: FileText,      label: 'FIR Assistant',     badge: 'NEW' },
             { path: '/crash-sos',        icon: Car,           label: 'Crash SOS',         badge: 'NEW' },
             { path: '/night-watch',      icon: Moon,          label: 'Night Watch',        badge: 'NEW' },
             { path: '/medical-card',     icon: Shield,        label: 'Medical Card',       badge: 'NEW' },

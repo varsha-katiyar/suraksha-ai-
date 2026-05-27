@@ -42,6 +42,533 @@
       "updated_at": "2026-04-25T08:54:55.294784",
       "reported_at": "2026-04-25T08:54:55.294789",
       "responder_id": "00000000-0000-0000-0000-000000000001"
+    },
+    {
+      "title": "Road Accident Detected",
+      "description": "AI analysis performed offline. Significant damage detected in uploaded image. Emergency response recommended.",
+      "type": "accident",
+      "latitude": 26.480801507155153,
+      "longitude": 80.25631987720391,
+      "severity": "critical",
+      "status": "pending",
+      "image_url": "http://localhost:8000/uploads/incidents/fc860e4b-dee2-45b9-a0db-83ce46d4681c.png",
+      "ai_analysis": {
+        "severity": "critical",
+        "reasoning": "Standard emergency dispatch protocol.",
+        "resources": [
+          "fire_brigade",
+          "ambulance"
+        ]
+      },
+      "reporter_id": null,
+      "id": "836223f5-6c42-4f21-a3bf-6c795720a83f",
+      "created_at": "2026-05-23T11:41:27.099561",
+      "updated_at": "2026-05-23T11:41:27.099561",
+      "reported_at": "2026-05-23T11:41:27.099561",
+      "witness_count": 1
+    },
+    {
+      "title": "Road Accident Detected",
+      "description": "AI analysis performed offline. Significant damage detected in uploaded image. Emergency response recommended.",
+      "type": "accident",
+      "latitude": 26.48080093276036,
+      "longitude": 80.25632101280083,
+      "severity": "critical",
+      "status": "pending",
+      "image_url": "http://localhost:8000/uploads/incidents/97b286ba-71da-4c97-a1e7-d5ae70fdb0b4.png",
+      "ai_analysis": {
+        "severity": "critical",
+        "reasoning": "Standard emergency dispatch protocol.",
+        "resources": [
+          "fire_brigade",
+          "ambulance"
+        ]
+      },
+      "reporter_id": null,
+      "id": "efeb795c-764b-43b2-bafe-5244217866ed",
+      "created_at": "2026-05-23T11:41:49.985741",
+      "updated_at": "2026-05-23T11:41:49.985741",
+      "reported_at": "2026-05-23T11:41:49.985741"
+    },
+    {
+      "title": "Road Accident Detected",
+      "description": "AI analysis performed offline. Significant damage detected in uploaded image. Emergency response recommended.",
+      "type": "accident",
+      "latitude": 26.480805547707618,
+      "longitude": 80.25632577909677,
+      "severity": "critical",
+      "status": "pending",
+      "image_url": "http://localhost:8000/uploads/incidents/aecd8588-12ec-43f7-8eeb-95b8850e41e7.png",
+      "ai_analysis": {
+        "severity": "critical",
+        "reasoning": "Standard emergency dispatch protocol.",
+        "resources": [
+          "fire_brigade",
+          "ambulance"
+        ]
+      },
+      "reporter_id": null,
+      "id": "8079f0c8-24a5-40d7-8b68-97d524c32b55",
+      "created_at": "2026-05-23T11:42:55.961982",
+      "updated_at": "2026-05-23T11:42:55.961982",
+      "reported_at": "2026-05-23T11:42:55.961982"
+    },
+    {
+      "title": "Road Accident Detected",
+      "description": "AI analysis performed offline. Significant damage detected in uploaded image. Emergency response recommended.",
+      "type": "accident",
+      "latitude": 26.480819625688074,
+      "longitude": 80.25630155834862,
+      "severity": "critical",
+      "status": "pending",
+      "image_url": "http://localhost:8000/uploads/incidents/93e145e0-bbfe-4654-a833-faf16922b9c7.png",
+      "ai_analysis": {
+        "severity": "critical",
+        "reasoning": "Standard emergency dispatch protocol.",
+        "resources": [
+          "fire_brigade",
+          "ambulance"
+        ]
+      },
+      "reporter_id": null,
+      "id": "c2637855-80c9-4152-a8f8-2743607cee12",
+      "created_at": "2026-05-23T19:22:11.331679",
+      "updated_at": "2026-05-23T19:22:11.331679",
+      "reported_at": "2026-05-23T19:22:11.331679"
+    },
+    {
+      "id": "03d57581-5781-49d8-b662-2dc2b8301594",
+      "title": "Witness Report: Accident",
+      "description": "two bike crash",
+      "type": "accident",
+      "latitude": 26.84,
+      "longitude": 80.7179,
+      "severity": "medium",
+      "status": "pending",
+      "source": "witness",
+      "witness_count": 1,
+      "confidence": "LOW",
+      "image_url": "http://localhost:8000/uploads/witness/witness_EF748DED.png",
+      "created_at": "2026-05-26T11:12:47.435576",
+      "updated_at": "2026-05-26T11:12:47.435576",
+      "reported_at": "2026-05-26T11:12:47.435576"
+    }
+  ],
+  "witness_reports": [
+    {
+      "id": "37D88F73",
+      "lat": 26.480801507155153,
+      "lon": 80.25631987720391,
+      "incident_type": "breakdown",
+      "severity_guess": "high",
+      "description": "",
+      "reporter_name": "Anonymous",
+      "photo_url": "http://localhost:8000/uploads/witness/witness_37D88F73.png",
+      "created_at": "2026-05-23T12:45:40.549053",
+      "linked_incident_id": "836223f5-6c42-4f21-a3bf-6c795720a83f"
+    },
+    {
+      "id": "EF748DED",
+      "lat": 26.84,
+      "lon": 80.7179,
+      "incident_type": "accident",
+      "severity_guess": "medium",
+      "description": "two bike crash",
+      "reporter_name": "arshu",
+      "photo_url": "http://localhost:8000/uploads/witness/witness_EF748DED.png",
+      "created_at": "2026-05-26T11:12:47.435576",
+      "linked_incident_id": "03d57581-5781-49d8-b662-2dc2b8301594"
+    }
+  ],
+  "road_scars": [
+    {
+      "id": "49bb00dc-18bd-4f8f-99ea-0e2535d70ac2",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "damage_type": "Pothole",
+      "description": "Huge crater in the middle of the road. Very dangerous.",
+      "is_verified": true,
+      "clustered": true,
+      "created_at": "2026-05-23T13:51:31.389045",
+      "cluster_id": "9d98eb11-835e-42c5-a4e4-9545c928406b"
+    },
+    {
+      "id": "9266909b-df99-4b48-bd5d-c2156ade710d",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "damage_type": "Pothole",
+      "description": "Huge crater in the middle of the road. Very dangerous.",
+      "is_verified": true,
+      "clustered": true,
+      "created_at": "2026-05-23T13:52:54.099034",
+      "cluster_id": "9d98eb11-835e-42c5-a4e4-9545c928406b"
+    },
+    {
+      "id": "223648bd-1064-4195-9f8c-97bbaedb866f",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "damage_type": "Pothole",
+      "description": "Huge crater in the middle of the road. Very dangerous.",
+      "is_verified": true,
+      "clustered": true,
+      "created_at": "2026-05-23T13:52:54.235427",
+      "cluster_id": "9d98eb11-835e-42c5-a4e4-9545c928406b"
+    },
+    {
+      "id": "b57a5296-45bf-4f28-8766-f7a7af99eee5",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "damage_type": "Pothole",
+      "description": "Huge crater in the middle of the road. Very dangerous.",
+      "is_verified": true,
+      "clustered": true,
+      "created_at": "2026-05-23T19:01:04.732150",
+      "cluster_id": "646273a4-8d5f-4ed2-897b-cf075e8e590d"
+    },
+    {
+      "id": "a2a1a874-8f5a-43a8-bb87-c9921e1bb08b",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "damage_type": "Pothole",
+      "description": "Huge crater in the middle of the road. Very dangerous.",
+      "is_verified": true,
+      "clustered": true,
+      "created_at": "2026-05-23T19:01:05.200503",
+      "cluster_id": "646273a4-8d5f-4ed2-897b-cf075e8e590d"
+    },
+    {
+      "id": "c9610fc8-2f57-46a4-b405-d966599d595f",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "damage_type": "Pothole",
+      "description": "Huge crater in the middle of the road. Very dangerous.",
+      "is_verified": true,
+      "clustered": true,
+      "created_at": "2026-05-23T19:01:05.800463",
+      "cluster_id": "646273a4-8d5f-4ed2-897b-cf075e8e590d"
+    },
+    {
+      "id": "b367bd22-e0ca-4b6e-89e2-fb8f7b973172",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "damage_type": "Pothole",
+      "description": "Huge crater in the middle of the road. Very dangerous.",
+      "is_verified": true,
+      "clustered": true,
+      "created_at": "2026-05-25T10:23:15.769277",
+      "cluster_id": "ce7198e7-6b7e-45e3-9f05-c53da09f1e88"
+    },
+    {
+      "id": "19ec41c8-01c3-4214-8aba-248aa4f50200",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "damage_type": "Pothole",
+      "description": "Huge crater in the middle of the road. Very dangerous.",
+      "is_verified": true,
+      "clustered": true,
+      "created_at": "2026-05-25T10:23:16.017394",
+      "cluster_id": "ce7198e7-6b7e-45e3-9f05-c53da09f1e88"
+    },
+    {
+      "id": "4f2b2823-6e78-48cf-87f1-bd5e6b2f5419",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "damage_type": "Pothole",
+      "description": "Huge crater in the middle of the road. Very dangerous.",
+      "is_verified": true,
+      "clustered": true,
+      "created_at": "2026-05-25T10:24:31.764664",
+      "cluster_id": "ce7198e7-6b7e-45e3-9f05-c53da09f1e88"
+    },
+    {
+      "id": "fcbd213d-e074-4162-b0ee-437bf1602f9f",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "damage_type": "Pothole",
+      "description": "Huge crater in the middle of the road. Very dangerous.",
+      "is_verified": true,
+      "clustered": true,
+      "created_at": "2026-05-26T10:07:29.170316",
+      "cluster_id": "48216162-687b-4417-a5ac-1cc3bfa702f5"
+    },
+    {
+      "id": "1c51a9c0-7a34-428e-b0e3-48cd8d122a6c",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "damage_type": "Pothole",
+      "description": "Huge crater in the middle of the road. Very dangerous.",
+      "is_verified": true,
+      "clustered": true,
+      "created_at": "2026-05-26T10:07:29.447133",
+      "cluster_id": "48216162-687b-4417-a5ac-1cc3bfa702f5"
+    },
+    {
+      "id": "aeba4b7b-74dd-437f-9cbf-6209b0146e63",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "damage_type": "Pothole",
+      "description": "Huge crater in the middle of the road. Very dangerous.",
+      "is_verified": true,
+      "clustered": true,
+      "created_at": "2026-05-26T10:07:29.812899",
+      "cluster_id": "48216162-687b-4417-a5ac-1cc3bfa702f5"
+    },
+    {
+      "id": "ccc44c68-2b9f-49ba-aea7-a31d13ca5eb7",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "damage_type": "Pothole",
+      "description": "Huge crater in the middle of the road. Very dangerous.",
+      "is_verified": true,
+      "clustered": true,
+      "created_at": "2026-05-26T10:18:29.849036",
+      "cluster_id": "afcf6981-60ba-4a2d-99b4-b4f780c95198"
+    },
+    {
+      "id": "3e649671-5f96-4889-ab74-6e7d77277dec",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "damage_type": "Pothole",
+      "description": "Huge crater in the middle of the road. Very dangerous.",
+      "is_verified": true,
+      "clustered": true,
+      "created_at": "2026-05-26T10:19:59.746949",
+      "cluster_id": "afcf6981-60ba-4a2d-99b4-b4f780c95198"
+    },
+    {
+      "id": "d504bdc3-e1e1-43e8-bf86-fd549a61549b",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "damage_type": "Pothole",
+      "description": "Huge crater in the middle of the road. Very dangerous.",
+      "is_verified": true,
+      "clustered": true,
+      "created_at": "2026-05-26T10:19:59.936296",
+      "cluster_id": "afcf6981-60ba-4a2d-99b4-b4f780c95198"
+    },
+    {
+      "id": "3d7aa1d9-ea94-4d43-a73c-c824d51f65f4",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "damage_type": "Pothole",
+      "description": "Huge crater in the middle of the road. Very dangerous.",
+      "is_verified": true,
+      "clustered": true,
+      "created_at": "2026-05-26T10:33:11.631721",
+      "cluster_id": "a21cbfe5-19f4-4b3d-8eda-7bca01b456e1"
+    },
+    {
+      "id": "ef73d650-9ac5-45d9-b6cb-95d3e8c9f321",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "damage_type": "Pothole",
+      "description": "Huge crater in the middle of the road. Very dangerous.",
+      "is_verified": true,
+      "clustered": true,
+      "created_at": "2026-05-26T10:34:58.668901",
+      "cluster_id": "a21cbfe5-19f4-4b3d-8eda-7bca01b456e1"
+    },
+    {
+      "id": "0f648ae2-d4fa-4700-8cd3-3f6441cf8fc5",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "damage_type": "Pothole",
+      "description": "Huge crater in the middle of the road. Very dangerous.",
+      "is_verified": true,
+      "clustered": true,
+      "created_at": "2026-05-26T10:34:58.777699",
+      "cluster_id": "a21cbfe5-19f4-4b3d-8eda-7bca01b456e1"
+    },
+    {
+      "id": "31befdd5-3c8c-42db-8701-586173bdb286",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "damage_type": "Pothole",
+      "description": "Huge crater in the middle of the road. Very dangerous.",
+      "is_verified": true,
+      "clustered": true,
+      "created_at": "2026-05-26T10:35:19.490112",
+      "cluster_id": "770dfa02-35db-4151-a665-2af74fc22184"
+    },
+    {
+      "id": "4fec50c7-58f6-4c6d-91e2-85c7204b0ce1",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "damage_type": "Pothole",
+      "description": "Huge crater in the middle of the road. Very dangerous.",
+      "is_verified": true,
+      "clustered": true,
+      "created_at": "2026-05-26T10:35:20.111279",
+      "cluster_id": "770dfa02-35db-4151-a665-2af74fc22184"
+    },
+    {
+      "id": "40f98dfa-f2c1-4da5-813b-906278e5cc2f",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "damage_type": "Pothole",
+      "description": "Huge crater in the middle of the road. Very dangerous.",
+      "is_verified": true,
+      "clustered": true,
+      "created_at": "2026-05-26T10:35:20.756661",
+      "cluster_id": "770dfa02-35db-4151-a665-2af74fc22184"
+    }
+  ],
+  "road_scar_clusters": [
+    {
+      "id": "9d98eb11-835e-42c5-a4e4-9545c928406b",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "reports": [
+        "49bb00dc-18bd-4f8f-99ea-0e2535d70ac2",
+        "9266909b-df99-4b48-bd5d-c2156ade710d",
+        "223648bd-1064-4195-9f8c-97bbaedb866f"
+      ],
+      "created_at": "2026-05-23T13:52:54.235427"
+    },
+    {
+      "id": "646273a4-8d5f-4ed2-897b-cf075e8e590d",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "reports": [
+        "b57a5296-45bf-4f28-8766-f7a7af99eee5",
+        "a2a1a874-8f5a-43a8-bb87-c9921e1bb08b",
+        "c9610fc8-2f57-46a4-b405-d966599d595f"
+      ],
+      "created_at": "2026-05-23T19:01:05.800690"
+    },
+    {
+      "id": "ce7198e7-6b7e-45e3-9f05-c53da09f1e88",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "reports": [
+        "b367bd22-e0ca-4b6e-89e2-fb8f7b973172",
+        "19ec41c8-01c3-4214-8aba-248aa4f50200",
+        "4f2b2823-6e78-48cf-87f1-bd5e6b2f5419"
+      ],
+      "created_at": "2026-05-25T10:24:31.765492"
+    },
+    {
+      "id": "48216162-687b-4417-a5ac-1cc3bfa702f5",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "reports": [
+        "fcbd213d-e074-4162-b0ee-437bf1602f9f",
+        "1c51a9c0-7a34-428e-b0e3-48cd8d122a6c",
+        "aeba4b7b-74dd-437f-9cbf-6209b0146e63"
+      ],
+      "created_at": "2026-05-26T10:07:29.812899"
+    },
+    {
+      "id": "afcf6981-60ba-4a2d-99b4-b4f780c95198",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "reports": [
+        "ccc44c68-2b9f-49ba-aea7-a31d13ca5eb7",
+        "3e649671-5f96-4889-ab74-6e7d77277dec",
+        "d504bdc3-e1e1-43e8-bf86-fd549a61549b"
+      ],
+      "created_at": "2026-05-26T10:19:59.936296"
+    },
+    {
+      "id": "a21cbfe5-19f4-4b3d-8eda-7bca01b456e1",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "reports": [
+        "3d7aa1d9-ea94-4d43-a73c-c824d51f65f4",
+        "ef73d650-9ac5-45d9-b6cb-95d3e8c9f321",
+        "0f648ae2-d4fa-4700-8cd3-3f6441cf8fc5"
+      ],
+      "created_at": "2026-05-26T10:34:58.780264"
+    },
+    {
+      "id": "770dfa02-35db-4151-a665-2af74fc22184",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "reports": [
+        "31befdd5-3c8c-42db-8701-586173bdb286",
+        "4fec50c7-58f6-4c6d-91e2-85c7204b0ce1",
+        "40f98dfa-f2c1-4da5-813b-906278e5cc2f"
+      ],
+      "created_at": "2026-05-26T10:35:20.756661"
+    }
+  ],
+  "road_scar_drafts": [
+    {
+      "id": "DRAFT-9D98EB",
+      "agency": "NHAI / PWD",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "total_reports": 3,
+      "damage_type": "Pothole",
+      "status": "Sent via Email/API",
+      "created_at": "2026-05-23T13:52:54.235427",
+      "pdf_url": "mock_pdf_url"
+    },
+    {
+      "id": "CHAUKAS-10242B0A",
+      "cluster_id": "646273a4-8d5f-4ed2-897b-cf075e8e590d",
+      "agency": "NHAI / PWD",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "damage_type": "Pothole",
+      "status": "Sent via Email",
+      "created_at": "2026-05-23T19:01:13.331564",
+      "pdf_path": "uploads/complaint_CHAUKAS-10242B0A.pdf"
+    },
+    {
+      "id": "CHAUKAS-A838BB35",
+      "cluster_id": "ce7198e7-6b7e-45e3-9f05-c53da09f1e88",
+      "agency": "NHAI / PWD",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "damage_type": "Pothole",
+      "status": "Sent via Email",
+      "created_at": "2026-05-25T10:24:37.732606",
+      "pdf_path": "uploads/complaint_CHAUKAS-A838BB35.pdf"
+    },
+    {
+      "id": "CHAUKAS-79B2C2C9",
+      "cluster_id": "48216162-687b-4417-a5ac-1cc3bfa702f5",
+      "agency": "NHAI / PWD",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "damage_type": "Pothole",
+      "status": "Sent via Email",
+      "created_at": "2026-05-26T10:07:34.670305",
+      "pdf_path": "uploads/complaint_CHAUKAS-79B2C2C9.pdf"
+    },
+    {
+      "id": "CHAUKAS-4B22288E",
+      "cluster_id": "afcf6981-60ba-4a2d-99b4-b4f780c95198",
+      "agency": "NHAI / PWD",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "damage_type": "Pothole",
+      "status": "Sent via Email",
+      "created_at": "2026-05-26T10:20:04.281771",
+      "pdf_path": "uploads/complaint_CHAUKAS-4B22288E.pdf"
+    },
+    {
+      "id": "CHAUKAS-5D341BB1",
+      "cluster_id": "a21cbfe5-19f4-4b3d-8eda-7bca01b456e1",
+      "agency": "NHAI / PWD",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "damage_type": "Pothole",
+      "status": "Sent via Email",
+      "created_at": "2026-05-26T10:35:03.215284",
+      "pdf_path": "uploads/complaint_CHAUKAS-5D341BB1.pdf"
+    },
+    {
+      "id": "CHAUKAS-C962798C",
+      "cluster_id": "770dfa02-35db-4151-a665-2af74fc22184",
+      "agency": "NHAI / PWD",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "damage_type": "Pothole",
+      "status": "Sent via Email",
+      "created_at": "2026-05-26T10:35:24.589998",
+      "pdf_path": "uploads/complaint_CHAUKAS-C962798C.pdf"
     }
   ]
 }
