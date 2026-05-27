@@ -33,7 +33,7 @@ India witnesses over **1.5 lakh road accident fatalities annually** — one deat
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                        CHAUKAS PLATFORM                         │
+│                        suraksha PLATFORM                         │
 ├─────────────────────────┬───────────────────────────────────────┤
 │      FRONTEND (React)   │          BACKEND (FastAPI)            │
 │                         │                                       │
