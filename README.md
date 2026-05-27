@@ -306,13 +306,7 @@ This ensures **judges can run the full application** by simply:
 
 ---
 
-## 👥 Team
 
-| Name       | Role                       |
-|------------|----------------------------|
-| Palash     | Full-Stack Developer & Lead |
-
----
 
 ## 📜 License
 
