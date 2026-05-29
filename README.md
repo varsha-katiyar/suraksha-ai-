@@ -168,6 +168,22 @@ This starts both:
 - Real-time weather data integration
 - Risk badges showing weather-correlated accident probability
 - Fog, rain, and ice warnings for highways
+  
+###  Real-Time Driver Alert System
+- **Proactive driver notifications** for approaching accident zones
+- **Hazard alerts** to prevent secondary collisions
+
+### Crowdsourced Witness Reporting
+- **Community-driven reporting** of accidents and road hazards
+- **Witness data collection** for improved incident verification
+
+### FIR & Insurance Assistant
+- **Automated FIR drafting** based on incident details and severity
+- **Streamlined insurance claims** with structured accident data
+
+### Road Scar (Infrastructure Damage)
+- **Road degradation tracking** and infrastructure monitoring
+- **Damage assessment** to assist authorities in maintenance planning
 
 ### Admin Dashboard (`/admin`)
 - **System-wide statistics** — total users, active incidents, critical alerts
