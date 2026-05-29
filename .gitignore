@@ -33,7 +33,7 @@ env/
 gen_*.py
 generate_*.py
 analyze_*.py
-build_chaukas_*.py
+build_shuraksha_ai_*.py
 check_doc_*.py
 inspect_doc.py
 

@@ -1,6 +1,6 @@
 @echo off
 echo ==========================================
-echo   CHAUKAS - Setup Script
+echo   SURAKSHA-AI - Setup Script
 echo ==========================================
 echo.
 
@@ -45,7 +45,7 @@ echo ==========================================
 echo   Setup complete!
 echo ==========================================
 echo.
-echo To START Chaukas, run these in TWO separate terminals:
+echo To START SURAKSHA-AI, run these in TWO separate terminals:
 echo.
 echo   Terminal 1 (Backend):
 echo     start_backend.bat

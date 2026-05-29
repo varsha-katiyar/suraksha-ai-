@@ -12,7 +12,7 @@ router = APIRouter()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 ANALYSIS_PROMPT = """
-You are an AI road accident severity analyst for India's emergency response system Chaukas.
+You are an AI road accident severity analyst for India's emergency response system SURAKSHA-AI.
 Analyze this accident photo and return a JSON object with EXACTLY these fields:
 {
   "severity": "low" | "medium" | "high" | "critical",

@@ -49,7 +49,7 @@ const Login = () => {
             <div className="hidden lg:flex w-3/5 relative z-10 flex-col justify-center px-20 border-r border-white/5 bg-black/20 backdrop-blur-sm">
                 <div className="max-w-2xl">
                     <div className="flex items-center gap-4 mb-12 animate-fade-in-up">
-                        <img src="/logo.jpg" alt="Chaukas Logo" className="w-12 h-12 object-contain drop-shadow-[0_0_15px_rgba(255,59,48,0.3)]" />
+                        <img src="/logo.jpg" alt="SURAKSHA-AI Logo" className="w-12 h-12 object-contain drop-shadow-[0_0_15px_rgba(255,59,48,0.3)]" />
                         <h1 className="text-3xl font-display font-bold tracking-wider">CHAU<span className="text-crisis-red">KAS</span></h1>
                     </div>
 
@@ -59,7 +59,7 @@ const Login = () => {
                     </h2>
 
                     <p className="text-xl text-gray-400 leading-relaxed mb-12 animate-fade-in-up delay-200">
-                        Chaukas is a centralized command platform designed to unify road safety management, resource allocation, and real-time threat intelligence.
+                        SURAKSHA-AI is a centralized command platform designed to unify road safety management, resource allocation, and real-time threat intelligence.
                         We bridge the gap between ground units and strategic command using AI-driven analytics and satellite telemetry.
                     </p>
 

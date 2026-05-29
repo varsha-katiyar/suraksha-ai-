@@ -54,9 +54,9 @@ except ImportError as e:
 
 # --- APP SETUP ---
 app = FastAPI(
-    title="Chaukas API",
+    title="SURAKSHA-AI API",
     version="2.0.0",
-    description="Backend for Chaukas: India's Intelligent Road Safety Command System"
+    description="Backend for SURAKSHA-AI: India's Intelligent Road Safety Command System"
 )
 
 from fastapi.staticfiles import StaticFiles
@@ -368,7 +368,7 @@ except Exception as e:
 @app.get("/api")
 async def root(request: Request):
     return {
-        "message": "🛡️ Chaukas API is Live — India's Road Safety Command System",
+        "message": "🛡️ SURAKSHA-AI API is Live — India's Road Safety Command System",
         "status": "operational",
         "services": {
             "crisis_dispatch": "active" if crisis_router is not None else "failed",
@@ -397,7 +397,7 @@ async def health():
     """Health check endpoint for Vercel"""
     return {
         "status": "healthy",
-        "message": "Chaukas API is operational",
+        "message": "SURAKSHA-AI API is operational",
         "version": "2.0.0",
         "timestamp": "2026-04-24T00:00:00Z"
     }

@@ -15,7 +15,7 @@ const MedicalCardPage = () => {
     const [existing, setExisting] = useState(null);
 
     useEffect(() => {
-        const data = localStorage.getItem('chaukas_medical_card');
+        const data = localStorage.getItem('suraksha-ai_ai_medical_card');
         if (data) {
             const parsed = JSON.parse(data);
             setExisting(parsed);
@@ -29,7 +29,7 @@ const MedicalCardPage = () => {
     const handleSave = () => {
         const tok = token || genToken();
         const payload = { ...form, token: tok, saved_at: new Date().toISOString() };
-        localStorage.setItem('chaukas_medical_card', JSON.stringify(payload));
+        localStorage.setItem('suraksha-ai_ai_medical_card', JSON.stringify(payload));
         setToken(tok);
         setSaved(true);
         setExisting(payload);
@@ -37,13 +37,13 @@ const MedicalCardPage = () => {
     };
 
     const copyLink = () => {
-        const link = `https://chaukas.in/sos/${token}`;
+        const link = `https://suraksha-ai_ai.in/sos/${token}`;
         navigator.clipboard?.writeText(link).catch(() => {});
         setCopied(true);
         setTimeout(() => setCopied(false), 2500);
     };
 
-    const cardUrl = token ? `https://chaukas.in/sos/${token}` : null;
+    const cardUrl = token ? `https://suraksha-ai_ai.in/sos/${token}` : null;
 
     return (
         <div className="min-h-screen bg-gray-900 text-white pb-16">
@@ -209,7 +209,7 @@ const MedicalCardPage = () => {
                                 ))}
 
                                 <div className="text-center pt-2">
-                                    <p className="text-[9px] text-gray-600">🔒 Chaukas Emergency System · Auto-expires after 2 hours</p>
+                                    <p className="text-[9px] text-gray-600">🔒 SURAKSHA-AI Emergency System · Auto-expires after 2 hours</p>
                                 </div>
                             </div>
                         </div>

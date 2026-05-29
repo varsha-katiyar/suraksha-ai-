@@ -88,7 +88,7 @@ const LandingPage = ({ onSystemInitialize }) => {
                             <div className="h-px flex-1 bg-gradient-to-r from-white/20 to-transparent"></div>
                         </div>
                         <p className="text-gray-400 text-lg md:text-xl font-light leading-relaxed mb-12 max-w-lg font-sans">
-                            Chaukas unifies real-time accident data, AI severity analysis, and emergency dispatch
+                            SURAKSHA-AI unifies real-time accident data, AI severity analysis, and emergency dispatch
                             into a single command interface — protecting lives on India's highways.
                         </p>
 
@@ -366,7 +366,7 @@ const LandingPage = ({ onSystemInitialize }) => {
                     {/* Divider */}
                     <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
                         <div className="text-gray-600 text-[10px] uppercase tracking-wider font-mono">
-                            &copy; 2026 CHAUKAS. All Rights Reserved.
+                            &copy; 2026 SURAKSHA-AI. All Rights Reserved.
                         </div>
                         <div className="flex gap-6 text-gray-600 text-[10px] uppercase tracking-wider font-mono">
                             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
@@ -393,7 +393,7 @@ const LandingPage = ({ onSystemInitialize }) => {
                             <div className="flex-1">
                                 <h3 className="text-white font-bold mb-2">Enable Location Access</h3>
                                 <p className="text-blue-100 text-sm mb-4">
-                                    Chaukas needs your location for accurate emergency dispatch and accident blackspot proximity alerts.
+                                    SURAKSHA-AI needs your location for accurate emergency dispatch and accident blackspot proximity alerts.
                                 </p>
                                 <div className="flex gap-2">
                                     <button

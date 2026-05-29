@@ -44,7 +44,7 @@ const CrashDetectionPage = () => {
             p => setLocation({ lat: p.coords.latitude, lng: p.coords.longitude }),
             () => setLocation(INDORE)
         );
-        const saved = localStorage.getItem('chaukas_medical_card');
+        const saved = localStorage.getItem('suraksha-ai_ai_medical_card');
         if (saved) setMedCard(JSON.parse(saved));
         setIsOffline(!navigator.onLine);
         window.addEventListener('online',  () => setIsOffline(false));
@@ -119,7 +119,7 @@ const CrashDetectionPage = () => {
 
     const triggerSMSFallback = () => {
         const msg = encodeURIComponent(
-            `🚨 ACCIDENT SOS from Chaukas\nLocation: ${location.lat.toFixed(4)},${location.lng.toFixed(4)}\nMap: https://maps.google.com?q=${location.lat},${location.lng}\nTime: ${new Date().toLocaleTimeString()}`
+            `🚨 ACCIDENT SOS from SURAKSHA-AI\nLocation: ${location.lat.toFixed(4)},${location.lng.toFixed(4)}\nMap: https://maps.google.com?q=${location.lat},${location.lng}\nTime: ${new Date().toLocaleTimeString()}`
         );
         window.open(`sms:100?body=${msg}`, '_blank');
     };
@@ -326,7 +326,7 @@ const CrashDetectionPage = () => {
                                 {icon:'📡', t:'Accelerometer', d:'60 Hz XYZ monitoring. Crash spike >50 m/s² triggers pipeline.', c:'red'},
                                 {icon:'📻', t:'Silent Broadcast', d:'5 simultaneous channels: Police, Ambulance, Fire, Community mesh, Personal contacts.', c:'cyan'},
                                 {icon:'📸', t:'Scene Capture', d:'3 auto-photos + 5s video. GPS-tagged. PDF crash report for FIR & insurance.', c:'purple'},
-                                {icon:'📵', t:'Offline Fallback', d:'No internet? SMS via sms: protocol + BLE mesh relay to nearby Chaukas users.', c:'orange'},
+                                {icon:'📵', t:'Offline Fallback', d:'No internet? SMS via sms: protocol + BLE mesh relay to nearby SURAKSHA-AI users.', c:'orange'},
                             ].map(s=>(
                                 <div key={s.t} className={`bg-gray-900/60 rounded-xl p-4 border border-${s.c}-500/10 hover:border-${s.c}-500/30 transition-all`}>
                                     <div className="text-2xl mb-2">{s.icon}</div>

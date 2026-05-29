@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Chaukas Pothole Intelligence Engine
+SURAKSHA-AI Pothole Intelligence Engine
 Detects and clusters potholes using accelerometer telemetry and probabilistic analysis.
 """
 

@@ -1,6 +1,6 @@
 {
-    "name": "Chaukas - India's Road Safety Command System",
-    "short_name": "Chaukas",
+    "name": "SURAKSHA-AI - India's Road Safety Command System",
+    "short_name": "SURAKSHA-AI",
     "description": "Real-time emergency coordination and response system.",
     "start_url": "/",
     "display": "standalone",

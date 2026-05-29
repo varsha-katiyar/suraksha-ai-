@@ -1,7 +1,7 @@
 
 import { openDB } from 'idb';
 
-const DB_NAME = 'ChaukasDB';
+const DB_NAME = 'SURAKSHA-AIDB';
 const DB_VERSION = 1;
 
 export const initDB = async () => {

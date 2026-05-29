@@ -38,7 +38,7 @@ const CommunityPage = () => {
     // Load or seed leaderboard
     let stored = null;
     try {
-      stored = JSON.parse(localStorage.getItem('chaukas_community_scores'));
+      stored = JSON.parse(localStorage.getItem('suraksha-ai_ai_community_scores'));
     } catch (e) {}
 
     if (stored && stored.length > 0) {
@@ -54,7 +54,7 @@ const CommunityPage = () => {
         city: 'Your City'
       };
       const seeded = [...SEED_LEADERBOARD, currentUserEntry].sort((a, b) => b.reputation - a.reputation);
-      localStorage.setItem('chaukas_community_scores', JSON.stringify(seeded));
+      localStorage.setItem('suraksha-ai_ai_community_scores', JSON.stringify(seeded));
       setLeaderboard(seeded);
     }
   }, [user, profile]);
@@ -79,7 +79,7 @@ const CommunityPage = () => {
         }
         return u;
       }).sort((a, b) => b.reputation - a.reputation);
-      localStorage.setItem('chaukas_community_scores', JSON.stringify(updated));
+      localStorage.setItem('suraksha-ai_ai_community_scores', JSON.stringify(updated));
       return updated;
     });
   };

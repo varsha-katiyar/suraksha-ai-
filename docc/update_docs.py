@@ -1,5 +1,5 @@
 """
-Generate Chaukas_Documentation_Updated.docx
+Generate SURAKSHA-AI_Documentation_Updated.docx
 Appends new enhancement sections to the existing document.
 Uses only styles present in the source docx.
 """
@@ -9,8 +9,8 @@ from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
 import datetime
 
-SRC = r"c:\Users\Palash\Downloads\CHAUKAS\docc\Chaukas_Documentation.docx"
-OUT = r"c:\Users\Palash\Downloads\CHAUKAS\docc\Chaukas_Documentation_Updated.docx"
+SRC = r"c:\Users\Palash\Downloads\SURAKSHA-AI\docc\SURAKSHA-AI_Documentation.docx"
+OUT = r"c:\Users\Palash\Downloads\SURAKSHA-AI\docc\SURAKSHA-AI_Documentation_Updated.docx"
 
 doc = Document(SRC)
 
@@ -65,7 +65,7 @@ doc.add_page_break()
 # ════════════════════════════════════════════════════════════════════════════
 h1("7. Platform Enhancements — Session 2 (May 2026)")
 body(
-    "Following the initial submission, the Chaukas platform was significantly extended with "
+    "Following the initial submission, the SURAKSHA-AI platform was significantly extended with "
     "six new modules and a complete UI redesign. These additions directly address real-world "
     "gaps in accident response communication, road infrastructure cost estimation, and "
     "exploratory data transparency."
@@ -85,7 +85,7 @@ h3("Design Specifications")
 table_2col([
     ("Sidebar Width",        "240 px fixed, collapsible to 64 px icon-only mode"),
     ("Background",           "#0a0f1e (deep navy) with 1 px border-right rgba(255,255,255,0.06)"),
-    ("Logo",                 "Red gradient shield icon + CHAUKAS logotype + Road Safety Command subtitle"),
+    ("Logo",                 "Red gradient shield icon + SURAKSHA-AI logotype + Road Safety Command subtitle"),
     ("Location Badge",       "Pinned Indore, MP with live green pulse indicator"),
     ("Navigation Sections",  "3 grouped sections: Intelligence / Safety & Features / Community"),
     ("Active State",         "border-left: 2px solid #ef4444 + bg-red-500/10 highlight"),
@@ -165,13 +165,13 @@ table_2col([
 body("Each dispatch is signed with GPS coordinate + device fingerprint + timestamp for tamper-proof evidence.")
 
 h3("Good Samaritan Network (Layer 1 — Community)")
-bullet("Three nearest Chaukas community members within 2 km radius are alerted simultaneously")
+bullet("Three nearest SURAKSHA-AI community members within 2 km radius are alerted simultaneously")
 bullet("Response cards appear on dispatch screen showing name and distance")
 bullet("Extends conventional emergency dispatch with a civilian first-responder network")
 
 h3("Auto Scene Documentation (Layer 3 — Feature 4)")
 bullet("Phase 1 — Capturing (0–1.5 s): 3 auto-photos (front, back, left) + 5-second video clip")
-bullet("Phase 2 — Uploading (1.5–3.5 s): GPS-tagged assets uploaded to Chaukas server")
+bullet("Phase 2 — Uploading (1.5–3.5 s): GPS-tagged assets uploaded to SURAKSHA-AI server")
 bullet("Phase 3 — Done: Crash Report PDF generated with timestamp, coordinates, media inventory")
 bullet("If Medical Card exists in localStorage, it is automatically embedded in the report")
 bullet("Download PDF button surfaces the report for FIR filing and insurance submission")
@@ -205,7 +205,7 @@ table_2col([
 
 h3("Secure Token URL System")
 bullet("On save, a cryptographic token (random 8-char alphanumeric) is generated client-side")
-bullet("Secure URL format: https://chaukas.in/sos/{TOKEN}")
+bullet("Secure URL format: https://suraksha-ai_ai.in/sos/{TOKEN}")
 bullet("URL is accessible without login — paramedic opens it in 1 tap from dispatch message")
 bullet("Designed to auto-expire after 2 hours to protect patient privacy")
 bullet("Card data persisted in localStorage — zero cloud dependency")

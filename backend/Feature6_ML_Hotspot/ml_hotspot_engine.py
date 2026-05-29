@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Chaukas ML Hotspot Engine
+SURAKSHA-AI ML Hotspot Engine
 AI-powered crisis hotspot detection and heatmap generation
 """
 

@@ -17,7 +17,7 @@ GOOGLE_API_KEY = os.getenv("GEMINI_API_KEY")
 print("INFO: Voice navigation using rule-based processing (Gemini package deprecated)")
 
 SYSTEM_PROMPT = """
-You are a voice navigation assistant for Chaukas, a road safety command platform.
+You are a voice navigation assistant for SURAKSHA-AI, a road safety command platform.
 
 Available Routes:
 - "/" - Main dashboard with map view

@@ -5,7 +5,7 @@
 
 class OfflineStorageManager {
     constructor() {
-        this.dbName = 'ChaukasDB';
+        this.dbName = 'SURAKSHA-AIDB';
         this.dbVersion = 3;
         this.db = null;
         this.isOnline = navigator.onLine;

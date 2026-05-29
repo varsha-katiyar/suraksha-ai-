@@ -11,7 +11,7 @@ const AIAssistantChatbot = () => {
         {
             id: 1,
             type: 'bot',
-            text: "Hello! I'm Chaukas AI, your emergency response assistant. How can I help you today?",
+            text: "Hello! I'm SURAKSHA-AI AI, your emergency response assistant. How can I help you today?",
             timestamp: new Date(),
             suggestions: ["Emergency preparedness", "Disaster types", "Safety guidelines"]
         }
@@ -167,7 +167,7 @@ const AIAssistantChatbot = () => {
                                     <Bot className="w-5 h-5 text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="font-bold text-white">Chaukas AI</h3>
+                                    <h3 className="font-bold text-white">SURAKSHA-AI AI</h3>
                                     <p className="text-xs text-blue-100">Emergency Assistant</p>
                                 </div>
                             </div>

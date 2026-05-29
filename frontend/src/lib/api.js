@@ -1,5 +1,5 @@
 /**
- * API Configuration for Chaukas
+ * API Configuration for SURAKSHA-AI
  * Handles both local development and production deployment
  */
 

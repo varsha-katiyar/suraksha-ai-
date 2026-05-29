@@ -57,7 +57,7 @@ const mockFrom = (table) => {
                 })
                 .then(data => {
                     try {
-                        localStorage.setItem(`chaukas_cache_${table}`, JSON.stringify(data));
+                        localStorage.setItem(`suraksha-ai_ai_cache_${table}`, JSON.stringify(data));
                     } catch (e) {
                         console.warn('Failed to cache data for offline use:', table);
                     }
@@ -66,7 +66,7 @@ const mockFrom = (table) => {
                 .catch(err => {
                     console.warn(`Backend fetch failed for ${table}, attempting offline fallback.`, err);
                     try {
-                        const cached = localStorage.getItem(`chaukas_cache_${table}`);
+                        const cached = localStorage.getItem(`suraksha-ai_ai_cache_${table}`);
                         if (cached) {
                             console.log(`Served ${table} from offline cache.`);
                             return { data: JSON.parse(cached), error: null };

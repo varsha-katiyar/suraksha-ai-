@@ -7,8 +7,8 @@ const EVAwarenessPage = () => {
   const [hasPledged, setHasPledged] = useState(false);
 
   useEffect(() => {
-    const stored = localStorage.getItem('chaukas_ev_pledges');
-    const myPledge = localStorage.getItem('chaukas_ev_my_pledge');
+    const stored = localStorage.getItem('suraksha-ai_ai_ev_pledges');
+    const myPledge = localStorage.getItem('suraksha-ai_ai_ev_my_pledge');
     setPledgeCount(stored ? parseInt(stored) : 2847);
     setHasPledged(myPledge === 'true');
   }, []);
@@ -18,8 +18,8 @@ const EVAwarenessPage = () => {
       const newCount = pledgeCount + 1;
       setPledgeCount(newCount);
       setHasPledged(true);
-      localStorage.setItem('chaukas_ev_pledges', newCount.toString());
-      localStorage.setItem('chaukas_ev_my_pledge', 'true');
+      localStorage.setItem('suraksha-ai_ai_ev_pledges', newCount.toString());
+      localStorage.setItem('suraksha-ai_ai_ev_my_pledge', 'true');
     }
   };
 
@@ -61,7 +61,7 @@ const EVAwarenessPage = () => {
     'Never charge during lightning storms or in waterlogged areas',
     'Plan highway routes with charging station stops every 150–200 km',
     'Keep a portable fire extinguisher rated for lithium-ion battery fires',
-    'Report potholes via Chaukas — bad roads damage EV batteries faster than ICE vehicles',
+    'Report potholes via SURAKSHA-AI — bad roads damage EV batteries faster than ICE vehicles',
   ];
 
   return (
@@ -78,7 +78,7 @@ const EVAwarenessPage = () => {
             GO <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">ELECTRIC</span>
           </h1>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Every road made safer starts with a cleaner vehicle. Chaukas promotes EV adoption as a key pillar
+            Every road made safer starts with a cleaner vehicle. SURAKSHA-AI promotes EV adoption as a key pillar
             of India's road safety and environmental sustainability goals.
           </p>
         </motion.div>

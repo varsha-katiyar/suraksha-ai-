@@ -30,7 +30,7 @@ const Navbar = ({ isSystemOnline, onTestPush }) => {
     // Save current route for session persistence
     React.useEffect(() => {
         if (location.pathname && location.pathname !== '/login' && location.pathname !== '/') {
-            localStorage.setItem('chaukas_last_route', location.pathname);
+            localStorage.setItem('suraksha-ai_ai_last_route', location.pathname);
         }
     }, [location.pathname]);
 
@@ -45,7 +45,7 @@ const Navbar = ({ isSystemOnline, onTestPush }) => {
             <div className="hidden lg:flex w-full h-[32px] border-b border-white/10 bg-[#020408] items-center justify-between px-6 z-50 relative">
                 <div className="flex items-center gap-4">
                     <div className="flex items-center gap-2">
-                        <img src="/logo.jpg" alt="Chaukas Logo" className="w-5 h-5 object-contain opacity-90" />
+                        <img src="/logo.jpg" alt="SURAKSHA-AI Logo" className="w-5 h-5 object-contain opacity-90" />
                         <span className="text-xs font-bold tracking-widest text-gray-200">CHAU<span className="text-red-600">KAS</span></span>
                     </div>
                     <div className="h-3 w-[1px] bg-white/20"></div>
@@ -74,7 +74,7 @@ const Navbar = ({ isSystemOnline, onTestPush }) => {
 
                 {/* Mobile: Logo */}
                 <div className="flex lg:hidden items-center gap-2">
-                    <img src="/logo.jpg" alt="Chaukas Logo" className="w-6 h-6 sm:w-8 sm:h-8 object-contain" />
+                    <img src="/logo.jpg" alt="SURAKSHA-AI Logo" className="w-6 h-6 sm:w-8 sm:h-8 object-contain" />
                     <span className="font-bold text-white tracking-wider text-xs sm:text-sm">CHAU<span className="text-red-600">KAS</span></span>
                 </div>
 

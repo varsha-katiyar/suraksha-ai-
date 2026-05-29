@@ -111,12 +111,12 @@ class ExplanationAgent:
         
         # Emergency keywords
         if any(word in message_lower for word in ['emergency', 'help', 'urgent', 'crisis']):
-            response = "For immediate emergencies, please call your local emergency services (911, 108, or 112). Chaukas provides crisis management support and resource coordination."
+            response = "For immediate emergencies, please call your local emergency services (911, 108, or 112). SURAKSHA-AI provides crisis management support and resource coordination."
             suggestions = ["How to report an incident?", "Emergency contact numbers", "Disaster preparedness tips"]
         
         # Disaster types
         elif any(word in message_lower for word in ['flood', 'fire', 'earthquake', 'cyclone']):
-            response = "Chaukas monitors various disaster types and provides real-time response coordination. Our system can help track incidents, allocate resources, and coordinate emergency response."
+            response = "SURAKSHA-AI monitors various disaster types and provides real-time response coordination. Our system can help track incidents, allocate resources, and coordinate emergency response."
             suggestions = ["Disaster preparedness", "Resource allocation", "Emergency protocols"]
         
         # Resource related
@@ -126,7 +126,7 @@ class ExplanationAgent:
         
         # General help
         else:
-            response = "I'm Chaukas AI, your emergency response assistant. I can help with disaster preparedness, emergency protocols, and general crisis management guidance. How can I assist you today?"
+            response = "I'm SURAKSHA-AI AI, your emergency response assistant. I can help with disaster preparedness, emergency protocols, and general crisis management guidance. How can I assist you today?"
             suggestions = ["Emergency preparedness", "Disaster types", "Resource information", "Safety guidelines"]
         
         return response, 0.7, suggestions

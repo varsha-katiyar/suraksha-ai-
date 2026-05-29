@@ -21,7 +21,7 @@ const DocumentationPage = () => {
           <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-red-600/20 border border-red-500/30 rounded-full text-red-400 text-xs font-bold mb-4">
             <BookOpen className="w-3 h-3" /> OFFICIAL DOCUMENTATION
           </div>
-          <h1 className="text-4xl font-black text-white mb-2">CHAUKAS</h1>
+          <h1 className="text-4xl font-black text-white mb-2">SURAKSHA-AI</h1>
           <p className="text-lg text-gray-400">India's Intelligent Road Safety Command System</p>
           <p className="text-xs text-gray-600 mt-2">National Road Safety Hackathon 2026 — IIT Madras</p>
         </motion.div>
@@ -29,9 +29,9 @@ const DocumentationPage = () => {
         {/* Mission */}
         <Section icon={Shield} title="Mission & Vision" color="text-red-400" delay={0.1}>
           <p>
-            <strong>Chaukas</strong> (meaning "alert" / "vigilant") is an AI-powered, offline-first road safety
+            <strong>SURAKSHA-AI</strong> (meaning "alert" / "vigilant") is an AI-powered, offline-first road safety
             platform designed to save lives on India's roads. With <strong>1.78 lakh road fatalities in 2023</strong> alone,
-            India faces a road safety crisis. Chaukas empowers citizens, traffic police, and emergency services
+            India faces a road safety crisis. SURAKSHA-AI empowers citizens, traffic police, and emergency services
             with real-time incident reporting, AI-driven severity analysis, and a nationwide emergency contact network.
           </p>
           <p>
@@ -132,7 +132,7 @@ const DocumentationPage = () => {
 
         {/* Offline Capabilities */}
         <Section icon={WifiOff} title="Offline Capabilities" color="text-orange-400" delay={0.3}>
-          <p>Chaukas is engineered for <strong>zero-connectivity environments</strong> — a critical requirement for rural India and network-restricted hackathon venues.</p>
+          <p>SURAKSHA-AI is engineered for <strong>zero-connectivity environments</strong> — a critical requirement for rural India and network-restricted hackathon venues.</p>
           <ul className="list-disc list-inside space-y-1 mt-2 text-gray-400">
             <li><strong>Authentication:</strong> Full local login/signup with hashed passwords in localStorage</li>
             <li><strong>Incident Reporting:</strong> Reports cached locally and synced when connectivity returns</li>
@@ -186,12 +186,8 @@ const DocumentationPage = () => {
         {/* Footer */}
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }}
           className="mt-12 text-center border-t border-white/10 pt-8 pb-4">
-          <p className="text-gray-500 text-sm mb-2">Designed & Developed by</p>
-          <p className="text-2xl font-black bg-gradient-to-r from-red-400 via-orange-400 to-yellow-400 bg-clip-text text-transparent">
-            Palash Singh Tomar
-          </p>
           <p className="text-xs text-gray-600 mt-2">National Road Safety Hackathon 2026 • Team Outliers</p>
-          <p className="text-[10px] text-gray-700 mt-4">© 2026 Chaukas. All Rights Reserved.</p>
+          <p className="text-[10px] text-gray-700 mt-4">© 2026 SURAKSHA-AI. All Rights Reserved.</p>
         </motion.div>
       </div>
     </div>

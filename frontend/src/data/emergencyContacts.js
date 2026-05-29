@@ -1,5 +1,5 @@
 /**
- * Chaukas — Emergency Contacts Database
+ * SURAKSHA-AI — Emergency Contacts Database
  * 137+ contacts across all 28 states + 8 UTs + national helplines
  * Source: National Emergency Number Association (NENA), MHA, MoRTH
  */

@@ -156,7 +156,7 @@ const MainApp = () => {
   const showTestNotification = () => {
     if ('serviceWorker' in navigator && Notification.permission === 'granted') {
       navigator.serviceWorker.ready.then(registration => {
-        registration.showNotification('Chaukas: System Test', {
+        registration.showNotification('SURAKSHA-AI: System Test', {
           body: 'This is a test notification to verify your browser settings. If you see this, notifications are working!',
           icon: '/vite.svg',
           requireInteraction: true,
@@ -216,7 +216,7 @@ const MainApp = () => {
   if (loading) {
     return (
       <div className="h-screen w-full flex items-center justify-center bg-crisis-deep text-crisis-red font-mono animate-pulse">
-        INITIALIZING CHAUKAS — ROAD SAFETY COMMAND...
+        INITIALIZING SURAKSHA-AI — ROAD SAFETY COMMAND...
       </div>
     );
   }
@@ -240,7 +240,7 @@ const MainApp = () => {
 
         <Routes>
           {/* Public */}
-          <Route path="/" element={<Navigate to={localStorage.getItem('chaukas_last_route') || '/landing'} replace />} />
+          <Route path="/" element={<Navigate to={localStorage.getItem('suraksha-ai_ai_last_route') || '/landing'} replace />} />
           <Route path="/landing" element={
             <div className="relative w-screen h-screen overflow-hidden">
               <LandingPage onSystemInitialize={() => setIsSystemOnline(true)} />
@@ -270,7 +270,7 @@ const MainApp = () => {
                   to={
                     profile?.role === 'admin'
                       ? '/admin'
-                      : localStorage.getItem('chaukas_last_route') || '/intelligence'
+                      : localStorage.getItem('suraksha-ai_ai_last_route') || '/intelligence'
                   }
                 />
               ) : (

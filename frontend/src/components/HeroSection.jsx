@@ -25,7 +25,7 @@ const HeroSection = ({ onInitialize }) => {
                     className="flex items-center gap-3 lg:gap-4 mb-4 lg:mb-8"
                 >
                     <div className="h-[2px] w-8 lg:w-16 bg-crisis-red shadow-[0_0_10px_#FF3B30] animate-pulse"></div>
-                    <span className="text-crisis-red font-mono tracking-[0.2em] text-xs lg:text-sm font-bold uppercase drop-shadow-md">Chaukas Road Safety Protocol</span>
+                    <span className="text-crisis-red font-mono tracking-[0.2em] text-xs lg:text-sm font-bold uppercase drop-shadow-md">SURAKSHA-AI Road Safety Protocol</span>
                 </motion.div>
 
                 <motion.h1

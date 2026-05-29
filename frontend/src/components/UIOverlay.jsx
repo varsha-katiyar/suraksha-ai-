@@ -18,7 +18,7 @@ const UIOverlay = ({ activeSection, setActiveSection, user, signOut, showWidgets
                 className="flex items-center justify-between pointer-events-auto"
             >
                 <div className="flex items-center gap-4">
-                    <img src="/logo.jpg" alt="Chaukas Logo" className="w-10 h-10 object-contain drop-shadow-[0_0_20px_rgba(255,42,42,0.5)]" />
+                    <img src="/logo.jpg" alt="SURAKSHA-AI Logo" className="w-10 h-10 object-contain drop-shadow-[0_0_20px_rgba(255,42,42,0.5)]" />
                     <div>
                         <h1 className="text-2xl font-bold tracking-wider text-white">CRISIS<span className="text-crisis-red">NET</span></h1>
                         <div className="text-xs text-crisis-blue uppercase tracking-[0.2em]">Global Response System</div>

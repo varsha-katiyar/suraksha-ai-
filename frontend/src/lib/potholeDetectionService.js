@@ -1,5 +1,5 @@
 /**
- * Chaukas Pothole Detection Service
+ * SURAKSHA-AI Pothole Detection Service
  * Captures accelerometer data and sends potential hazard events to the backend.
  */
 

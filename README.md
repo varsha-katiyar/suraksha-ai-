@@ -1,4 +1,4 @@
-# 🛡️ suraksha ai — India's Intelligent Road Safety Command System
+# 🛡️ suraksha-ai — India's Intelligent Road Safety Command System
 
 > **Road Safety Hackathon 2026 | IIT Madras**
 > *AI-Powered Accident Detection, Real-Time Blackspot Mapping, and Emergency Dispatch*
@@ -9,13 +9,13 @@
 
 India witnesses over **1.5 lakh road accident fatalities annually** — one death every 3.5 minutes. The primary causes include delayed emergency response, lack of real-time accident data, absence of severity assessment at the reporting stage, and poor coordination between traffic authorities and emergency responders. The critical "**Golden Hour**" — the first 60 minutes after an accident — is lost due to fragmented systems.
 
-**suraksha ai** solves this by providing a **unified, AI-driven command interface** that detects accidents, assesses severity in real-time using Gemini AI, and dispatches emergency resources within seconds — all from a single platform.
+**suraksha-ai** solves this by providing a **unified, AI-driven command interface** that detects accidents, assesses severity in real-time using Gemini AI, and dispatches emergency resources within seconds — all from a single platform.
 
 ---
 
 ## 🎯 What is suraksha-ai?
 
-**suraksha ai** ( meaning "Alert" / "Vigilant") is an end-to-end **Intelligent Road Safety Command System** built for India's highways and urban roads. It combines:
+**suraksha-ai** (Hindi: सुरक्षा — meaning "Protection" / "Safety") is an end-to-end **Intelligent Road Safety Command System** built for India's highways and urban roads. It combines:
 
 - 🤖 **AI-Powered Severity Analysis** — Gemini Vision AI analyzes accident photos to classify severity and recommend resources
 - 📍 **Real-Time Incident Mapping** — Interactive 3D globe and Leaflet maps for live incident tracking
@@ -33,7 +33,7 @@ India witnesses over **1.5 lakh road accident fatalities annually** — one deat
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                        suraksha PLATFORM                         │
+│                        suraksha-ai PLATFORM                         │
 ├─────────────────────────┬───────────────────────────────────────┤
 │      FRONTEND (React)   │          BACKEND (FastAPI)            │
 │                         │                                       │
@@ -45,7 +45,12 @@ India witnesses over **1.5 lakh road accident fatalities annually** — one deat
 │  • Voice Navigator      │  Feature 6: ML Hotspot Engine         │
 │  • Weather Risk Badge   │  Feature 7: AI Recommendation + Seismic│
 │  • Multilingual Support │  Feature 8: AI Intelligence           │
-│                         │  Feature 9: Resource Management       │
+│  • Pothole Mapping      │  Feature 9: Resource Management       │
+│  • Driver Alerts        │  Feature 10: Pothole Intelligence     │
+│  • Witness Reporting    │  Feature 11: Driver Alert             │
+│  • FIR Assistant        │  Feature 12: Witness Report           │
+│  • Road Scar Monitoring │  Feature 13: FIR Assistant            │
+│                         │  Feature 17: Road Scar                │
 │  Port: 5173 (Vite)      │  Photo AI: Gemini Vision Analyzer     │
 │                         │  Weather: Risk Engine                 │
 │                         │                                       │
@@ -185,6 +190,26 @@ This starts both:
 - **Road degradation tracking** and infrastructure monitoring
 - **Damage assessment** to assist authorities in maintenance planning
 
+### Feature 10: Pothole Intelligence & Smart Routing
+- **Pothole mapping** and logging for safer navigation
+- **Smart routing** to avoid hazardous road conditions
+
+### Feature 11: Real-Time Driver Alert System
+- **Proactive driver notifications** for approaching accident zones
+- **Hazard alerts** to prevent secondary collisions
+
+### Feature 12: Crowdsourced Witness Reporting
+- **Community-driven reporting** of accidents and road hazards
+- **Witness data collection** for improved incident verification
+
+### Feature 13: FIR & Insurance Assistant
+- **Automated FIR drafting** based on incident details and severity
+- **Streamlined insurance claims** with structured accident data
+
+### Feature 17: Road Scar (Infrastructure Damage)
+- **Road degradation tracking** and infrastructure monitoring
+- **Damage assessment** to assist authorities in maintenance planning
+
 ### Admin Dashboard (`/admin`)
 - **System-wide statistics** — total users, active incidents, critical alerts
 - **Real-time incident management** — acknowledge, update status, dispatch resources
@@ -215,7 +240,7 @@ This starts both:
 ## 📂 Project Structure
 
 ```
-Chaukas/
+Suraksha AI/
 ├── frontend/                   # React + Vite Frontend
 │   ├── src/
 │   │   ├── components/         # 35 React components
@@ -261,6 +286,11 @@ Chaukas/
 │   ├── Feature7_Seismic/       # Seismic monitoring
 │   ├── Feature8_AI_Intelligence/ # AI disaster intelligence
 │   ├── Feature9_Resources/     # Resource management
+│   ├── Feature10_PotholeIntelligence/ # AI Pothole detection
+│   ├── Feature11_DriverAlert/  # Real-time hazard alerts
+│   ├── Feature12_WitnessReport/# Crowdsourced reporting
+│   ├── Feature13_FIR_Assistant/# Automated FIR generation
+│   ├── Feature17_RoadScar/     # Road degradation tracking
 │   ├── Feature_PhotoAI/        # Gemini Vision analyzer
 │   ├── Feature_Weather/        # Weather risk engine
 │   └── Feature_Admin/          # Admin utilities
@@ -272,7 +302,7 @@ Chaukas/
 
 ## 🔐 Offline-First Design
 
-suraksha ai is designed to work **completely offline** — no cloud database, no external API keys required for core functionality:
+suraksha-ai is designed to work **completely offline** — no cloud database, no external API keys required for core functionality:
 
 - **Database**: All data is stored in `backend/local_db.json` using a custom MockSupabase engine
 - **Media Storage**: Images, videos, and audio are saved to `backend/uploads/` and served via FastAPI static files
@@ -318,9 +348,15 @@ This ensures **judges can run the full application** by simply:
 | `/api/admin/analytics`          | GET    | Comprehensive analytics                  |
 | `/api/photo-ai/analyze`         | POST   | Gemini Vision photo analysis             |
 | `/api/weather/risk`             | GET    | Weather risk assessment                  |
+| `/api/potholes`                 | GET/POST| Pothole mapping & smart routing         |
+| `/api/driver-alerts`            | GET    | Real-time driver hazard alerts           |
+| `/api/witness-reports`          | POST   | Submit crowdsourced witness reports      |
+| `/api/fir/draft`                | POST   | Generate automated FIR draft             |
+| `/api/road-scar`                | GET    | Road degradation tracking                |
 | `/api/health`                   | GET    | Health check                             |
 
 ---
+
 
 
 
@@ -328,4 +364,4 @@ This ensures **judges can run the full application** by simply:
 
 This project was built for the **Road Safety Hackathon 2026** organized by **IIT Madras**.
 
-© 2026 suraksha ai. All Rights Reserved.
+© 2026 suraksha-ai. All Rights Reserved.

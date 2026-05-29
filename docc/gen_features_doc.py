@@ -1,9 +1,9 @@
-"""Standalone Chaukas Feature Explanation Document"""
+"""Standalone SURAKSHA-AI Feature Explanation Document"""
 from docx import Document
 from docx.shared import Pt, RGBColor
 import datetime
 
-OUT = r"c:\Users\Palash\Downloads\CHAUKAS\docc\Chaukas_Features_Explained.docx"
+OUT = r"c:\Users\Palash\Downloads\SURAKSHA-AI\docc\SURAKSHA-AI_Features_Explained.docx"
 doc = Document()
 
 # ── Style helpers ────────────────────────────────────────────────────────────
@@ -37,13 +37,13 @@ def tbl(rows, h1="Aspect", h2="Detail"):
 # ════════════════════════════════════════════════════════════════════════════
 # COVER
 # ════════════════════════════════════════════════════════════════════════════
-p = doc.add_heading("CHAUKAS — Complete Feature Reference", 0)
+p = doc.add_heading("SURAKSHA-AI — Complete Feature Reference", 0)
 body("AI-Powered Road Safety Command System")
 body("National Road Safety Hackathon 2026 — IIT Madras | Team Outliers")
 body(f"Generated: {datetime.datetime.now().strftime('%d %B %Y, %H:%M IST')}")
 body("")
 body(
-    "This document explains every feature of the Chaukas platform: how it works technically, "
+    "This document explains every feature of the SURAKSHA-AI platform: how it works technically, "
     "the real-world problem it solves, its measurable impact, and how it differs from "
     "existing solutions in the Indian road safety ecosystem."
 )
@@ -79,9 +79,9 @@ feature_block(
         "density + time-of-day into a composite severity score."
     ),
     diff=(
-        "Chaukas is the only platform to combine live weather, historical incident density, and "
+        "SURAKSHA-AI is the only platform to combine live weather, historical incident density, and "
         "time-of-day coefficients into a single unified risk score. Competitors show hazard pins; "
-        "Chaukas shows a risk percentage that changes dynamically with conditions."
+        "SURAKSHA-AI shows a risk percentage that changes dynamically with conditions."
     )
 )
 hr()
@@ -108,7 +108,7 @@ feature_block(
     ),
     fixes=(
         "Current NHAI and MoRTH blackspot lists are updated annually — a 12-month lag between "
-        "an emerging hotspot forming and official recognition. Chaukas detects emerging clusters "
+        "an emerging hotspot forming and official recognition. SURAKSHA-AI detects emerging clusters "
         "within hours of sufficient report density."
     ),
     diff=(
@@ -142,7 +142,7 @@ feature_block(
         "to full emergency response based on objective risk metrics."
     ),
     diff=(
-        "Chaukas directly mirrors the NDMA framework in software — making it audit-compliant "
+        "SURAKSHA-AI directly mirrors the NDMA framework in software — making it audit-compliant "
         "and presentable to government evaluators. No competitor maps their alert system to the "
         "official national disaster response taxonomy."
     )
@@ -166,12 +166,12 @@ feature_block(
     ),
     fixes=(
         "The standard approach is to call 112 (national emergency), which routes to a call "
-        "centre that then re-dispatches. Each relay adds 90-180 seconds. Chaukas presents "
+        "centre that then re-dispatches. Each relay adds 90-180 seconds. SURAKSHA-AI presents "
         "the specific local ambulance number directly, cutting one relay step."
     ),
     diff=(
         "Works 100% offline. Competitor apps (like bSafe or Raksha) require internet for "
-        "contact lookup. Chaukas pre-caches all Indore emergency contacts at app install."
+        "contact lookup. SURAKSHA-AI pre-caches all Indore emergency contacts at app install."
     )
 )
 hr()
@@ -193,11 +193,11 @@ feature_block(
     ),
     fixes=(
         "Most Indian traffic control rooms use fragmented systems: one screen for CCTV, "
-        "one for radio logs, one for Excel incident registers. Chaukas unifies all in one view."
+        "one for radio logs, one for Excel incident registers. SURAKSHA-AI unifies all in one view."
     ),
     diff=(
         "Fully local — no cloud SaaS subscription needed. ICCC (Integrated Command & Control "
-        "Centres) exist in large cities but cost crores. Chaukas delivers a similar capability "
+        "Centres) exist in large cities but cost crores. SURAKSHA-AI delivers a similar capability "
         "deployable on a ₹15,000 mini-PC at any district police office."
     )
 )
@@ -221,12 +221,12 @@ feature_block(
     ),
     fixes=(
         "The existing citizen reporting mechanisms (mParivahan app, iRAD portal) require "
-        "account registration, have complex forms, and do not work offline. Chaukas reduces "
+        "account registration, have complex forms, and do not work offline. SURAKSHA-AI reduces "
         "the reporting flow to under 30 seconds and works in areas with poor connectivity."
     ),
     diff=(
         "Offline-first via IndexedDB + Service Worker. Existing government portals are "
-        "purely online. Chaukas reports auto-sync when connection returns — critical for "
+        "purely online. SURAKSHA-AI reports auto-sync when connection returns — critical for "
         "reporting accidents on highway stretches with intermittent 4G coverage."
     )
 )
@@ -273,7 +273,7 @@ feature_block(
         "(3) do not integrate with local CATS ambulance numbers or community networks; "
         "(4) do not generate a crash report PDF for FIR/insurance; "
         "(5) do not have an offline SMS fallback. "
-        "Chaukas delivers all five capabilities on any Android browser."
+        "SURAKSHA-AI delivers all five capabilities on any Android browser."
     )
 )
 hr()
@@ -285,7 +285,7 @@ feature_block(
         "A one-time setup form captures: full name, age, blood type (8-type selector), "
         "allergies, pre-existing conditions, current medications, emergency contact name + phone. "
         "On save, a cryptographic 8-character token is generated client-side. "
-        "This creates a secure URL: https://chaukas.in/sos/{TOKEN} — accessible without login, "
+        "This creates a secure URL: https://suraksha-ai_ai.in/sos/{TOKEN} — accessible without login, "
         "designed to expire after 2 hours. Data is persisted in localStorage (no cloud dependency). "
         "When Crash SOS fires, the token URL is automatically embedded in the dispatch packet "
         "sent to all channels. Paramedic taps the link and sees the full card instantly — "
@@ -307,7 +307,7 @@ feature_block(
         "(1) not accessible to paramedics on the victim's locked phone; "
         "(2) not auto-dispatched to emergency services at crash time; "
         "(3) not integrated with the crash detection pipeline. "
-        "Chaukas pushes the card proactively to every responder the moment SOS fires."
+        "SURAKSHA-AI pushes the card proactively to every responder the moment SOS fires."
     )
 )
 hr()
@@ -369,7 +369,7 @@ feature_block(
     ),
     diff=(
         "No existing Indian pothole reporting app (FixMyStreet, PWD citizen portals) generates "
-        "a material Bill of Materials. They only record complaints. Chaukas closes the loop "
+        "a material Bill of Materials. They only record complaints. SURAKSHA-AI closes the loop "
         "from detection → severity classification → actionable procurement estimate."
     )
 )
@@ -403,7 +403,7 @@ feature_block(
     ),
     diff=(
         "Unlike a Tableau/Power BI dashboard (which requires a paid licence and separate data "
-        "pipeline), the Chaukas EDA is fully embedded in the platform, uses the same live data "
+        "pipeline), the SURAKSHA-AI EDA is fully embedded in the platform, uses the same live data "
         "as the operational modules, and explains the AI methodology interactively — "
         "a capability unique to this platform."
     )
@@ -437,7 +437,7 @@ feature_block(
     diff=(
         "Roadbotics (US) and Waycare use camera-based or LiDAR pothole detection requiring "
         "dedicated hardware vehicles costing lakhs per survey run. "
-        "Chaukas achieves comparable detection using the accelerometer that already exists "
+        "SURAKSHA-AI achieves comparable detection using the accelerometer that already exists "
         "in every smartphone — zero additional hardware cost."
     )
 )
@@ -469,7 +469,7 @@ feature_block(
     ),
     diff=(
         "Most hackathon submissions use either a top navbar or a hamburger menu. "
-        "The sidebar with grouped sections and animated collapse makes Chaukas look and feel "
+        "The sidebar with grouped sections and animated collapse makes SURAKSHA-AI look and feel "
         "like a production-grade platform, not a prototype — a critical differentiator for judges."
     )
 )
@@ -480,20 +480,20 @@ feature_block(
 doc.add_page_break()
 h1("PART C — Competitive Comparison Matrix")
 hr()
-body("The table below compares Chaukas against the three most relevant existing solutions available in India.")
+body("The table below compares SURAKSHA-AI against the three most relevant existing solutions available in India.")
 doc.add_paragraph()
 tbl([
-    ("Real-time risk scoring (weather + density + time)", "Chaukas only | iRAD: No | Google Maps: No | 112 App: No"),
-    ("DBSCAN ML hotspot clustering",                      "Chaukas only | iRAD: Manual blacklists | Google: Heuristic | 112: No"),
-    ("Auto crash detection (accelerometer)",              "Chaukas + Apple/Google | iRAD: No | Google: No | 112: No"),
-    ("Multi-channel SOS dispatch (5 simultaneous)",       "Chaukas only | Apple: 1 channel | iRAD: No | 112: 1 relay"),
-    ("Medical card auto-attached to SOS",                 "Chaukas only | Apple: Local only | Others: No"),
-    ("Offline SMS fallback for no-internet zones",        "Chaukas only | All others: Require internet"),
-    ("Night Watch stop-in-danger-zone detection",         "Chaukas only | Garmin inReach: Yes (₹40k+) | Others: No"),
-    ("Pothole material cost estimator",                   "Chaukas only | No other platform"),
-    ("Accelerometer pothole detection on browser",        "Chaukas, Roadbotics (hardware) | Others: No"),
-    ("Works 100% offline",                               "Chaukas (IndexedDB + SQLite) | iRAD: No | Google: Partial"),
-    ("Open source, zero cloud cost",                     "Chaukas, iRAD | Google: Paid | 112: Gov-funded"),
+    ("Real-time risk scoring (weather + density + time)", "SURAKSHA-AI only | iRAD: No | Google Maps: No | 112 App: No"),
+    ("DBSCAN ML hotspot clustering",                      "SURAKSHA-AI only | iRAD: Manual blacklists | Google: Heuristic | 112: No"),
+    ("Auto crash detection (accelerometer)",              "SURAKSHA-AI + Apple/Google | iRAD: No | Google: No | 112: No"),
+    ("Multi-channel SOS dispatch (5 simultaneous)",       "SURAKSHA-AI only | Apple: 1 channel | iRAD: No | 112: 1 relay"),
+    ("Medical card auto-attached to SOS",                 "SURAKSHA-AI only | Apple: Local only | Others: No"),
+    ("Offline SMS fallback for no-internet zones",        "SURAKSHA-AI only | All others: Require internet"),
+    ("Night Watch stop-in-danger-zone detection",         "SURAKSHA-AI only | Garmin inReach: Yes (₹40k+) | Others: No"),
+    ("Pothole material cost estimator",                   "SURAKSHA-AI only | No other platform"),
+    ("Accelerometer pothole detection on browser",        "SURAKSHA-AI, Roadbotics (hardware) | Others: No"),
+    ("Works 100% offline",                               "SURAKSHA-AI (IndexedDB + SQLite) | iRAD: No | Google: Partial"),
+    ("Open source, zero cloud cost",                     "SURAKSHA-AI, iRAD | Google: Paid | 112: Gov-funded"),
 ], "Capability", "Platform Availability")
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -515,7 +515,7 @@ tbl([
 
 doc.add_paragraph()
 body(
-    "Chaukas addresses the three fundamental gaps identified in India's road safety ecosystem: "
+    "SURAKSHA-AI addresses the three fundamental gaps identified in India's road safety ecosystem: "
     "fragmented data (unified platform), delayed reporting (real-time + offline-first), and "
     "zero predictive capability (AI severity + ML clustering + accelerometer detection). "
     "Every feature is deployable today on existing hardware with zero cloud infrastructure cost."

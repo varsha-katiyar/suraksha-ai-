@@ -22,7 +22,7 @@ export const AuthProvider = ({ children }) => {
 
     useEffect(() => {
         // Check for local auth session first
-        const savedAuth = localStorage.getItem('chaukas_auth_session');
+        const savedAuth = localStorage.getItem('suraksha-ai_ai_auth_session');
         if (savedAuth) {
             try {
                 const { user: savedUser, profile: savedProfile } = JSON.parse(savedAuth);
@@ -33,7 +33,7 @@ export const AuthProvider = ({ children }) => {
                 return;
             } catch (e) {
                 console.error('AuthContext: Invalid saved session');
-                localStorage.removeItem('chaukas_auth_session');
+                localStorage.removeItem('suraksha-ai_ai_auth_session');
             }
         }
 
@@ -45,7 +45,7 @@ export const AuthProvider = ({ children }) => {
                 setUser(fbUser);
                 setProfile(fbProfile);
                 // Migrate to new key
-                localStorage.setItem('chaukas_auth_session', fallbackAuth);
+                localStorage.setItem('suraksha-ai_ai_auth_session', fallbackAuth);
                 localStorage.removeItem('fallback_auth');
                 setLoading(false);
                 return;
@@ -55,7 +55,7 @@ export const AuthProvider = ({ children }) => {
         }
 
         // Seed demo user account if not exists (for hackathon demo)
-        const users = JSON.parse(localStorage.getItem('chaukas_users') || '{}');
+        const users = JSON.parse(localStorage.getItem('suraksha-ai_ai_users') || '{}');
         if (!users['user@demo.com']) {
             users['user@demo.com'] = {
                 id: '00000000-0000-0000-0000-000000000002',
@@ -63,7 +63,7 @@ export const AuthProvider = ({ children }) => {
                 passwordHash: simpleHash('demo'),
                 created_at: new Date().toISOString()
             };
-            localStorage.setItem('chaukas_users', JSON.stringify(users));
+            localStorage.setItem('suraksha-ai_ai_users', JSON.stringify(users));
         }
 
         // No saved session — not logged in
@@ -73,18 +73,18 @@ export const AuthProvider = ({ children }) => {
     // Get local user store
     const getLocalUsers = () => {
         try {
-            return JSON.parse(localStorage.getItem('chaukas_users') || '{}');
+            return JSON.parse(localStorage.getItem('suraksha-ai_ai_users') || '{}');
         } catch { return {}; }
     };
 
     const saveLocalUsers = (users) => {
-        localStorage.setItem('chaukas_users', JSON.stringify(users));
+        localStorage.setItem('suraksha-ai_ai_users', JSON.stringify(users));
     };
 
     const persistSession = (userData, profileData) => {
         setUser(userData);
         setProfile(profileData);
-        localStorage.setItem('chaukas_auth_session', JSON.stringify({
+        localStorage.setItem('suraksha-ai_ai_auth_session', JSON.stringify({
             user: userData,
             profile: profileData
         }));
@@ -198,7 +198,7 @@ export const AuthProvider = ({ children }) => {
 
     const signOut = async () => {
         // Save last route before logout
-        localStorage.removeItem('chaukas_auth_session');
+        localStorage.removeItem('suraksha-ai_ai_auth_session');
         localStorage.removeItem('fallback_auth');
         setUser(null);
         setProfile(null);

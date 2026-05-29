@@ -202,7 +202,7 @@ export default function DriverAlertPage() {
             <div className="flex-1 space-y-3 text-center md:text-left">
               {!monitoring ? (
                 <>
-                  <h2 className="text-xl font-bold text-white">Chaukas Driver Mode</h2>
+                  <h2 className="text-xl font-bold text-white">SURAKSHA-AI Driver Mode</h2>
                   <p className="text-sm text-gray-400">
                     Track via GPS. If any accident or incident occurs within a 3km radius, you will get a <strong className="text-white">voice alert</strong> — automatically.
                   </p>

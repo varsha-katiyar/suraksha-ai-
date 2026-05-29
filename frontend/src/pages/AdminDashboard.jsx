@@ -226,10 +226,10 @@ const AdminDashboard = () => {
     }
     // Fallback: use localStorage or seed data
     try {
-      const cached = localStorage.getItem('chaukas_admin_incidents');
+      const cached = localStorage.getItem('suraksha-ai_ai_admin_incidents');
       if (cached) { setIncidents(JSON.parse(cached)); return; }
     } catch (e) {}
-    localStorage.setItem('chaukas_admin_incidents', JSON.stringify(SEED_INCIDENTS));
+    localStorage.setItem('suraksha-ai_ai_admin_incidents', JSON.stringify(SEED_INCIDENTS));
     setIncidents(SEED_INCIDENTS);
   };
 
@@ -564,7 +564,7 @@ const AdminDashboard = () => {
               <h1 className="text-4xl font-black bg-gradient-to-r from-crisis-red via-orange-500 to-yellow-500 bg-clip-text text-transparent">
                 ADMIN COMMAND CENTER
               </h1>
-              <p className="text-gray-400 text-sm mt-1">Chaukas Administrative Control Panel</p>
+              <p className="text-gray-400 text-sm mt-1">SURAKSHA-AI Administrative Control Panel</p>
             </div>
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-2 px-3 py-1 bg-green-500/20 border border-green-500/50 rounded-lg">
@@ -1414,7 +1414,7 @@ const AdminDashboard = () => {
                 <div className="space-y-2 max-h-64 overflow-y-auto">
                   {[
                     { time: '14:32:15', level: 'INFO', message: 'System health check completed successfully' },
-                    { time: '14:31:45', level: 'INFO', message: 'User authentication successful for admin@chaukas.com' },
+                    { time: '14:31:45', level: 'INFO', message: 'User authentication successful for admin@suraksha-ai_ai.com' },
                     { time: '14:30:22', level: 'WARN', message: 'High memory usage detected: 78%' },
                     { time: '14:29:18', level: 'INFO', message: 'Incident processed successfully: INC-2024-001' },
                     { time: '14:28:45', level: 'INFO', message: 'Database backup completed' },

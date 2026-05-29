@@ -229,7 +229,7 @@ def trigger_fetch_news(payload: NewsFetchRequest):
                 },
                 {
                     'title': f'Pothole Crisis in {location}: 847 Complaints Filed in 30 Days',
-                    'description': f'Citizens of {location} have filed over 847 pothole complaints via the Chaukas road safety app in the last 30 days. The municipal corporation has been ordered to repair all flagged potholes within 15 days or face penalty.',
+                    'description': f'Citizens of {location} have filed over 847 pothole complaints via the SURAKSHA-AI road safety app in the last 30 days. The municipal corporation has been ordered to repair all flagged potholes within 15 days or face penalty.',
                     'image_url': 'https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?w=600&h=400&fit=crop',
                     'source_name': 'Hindustan Times', 'article_url': f'https://hindustantimes.com/potholes-{location.lower().replace(" ", "-")}-2026',
                     'published_at': (datetime.datetime.now() - datetime.timedelta(hours=18)).isoformat(), 'category': 'General Alert', 'location_name': location, 'latitude': None, 'longitude': None
@@ -259,7 +259,7 @@ def trigger_fetch_news(payload: NewsFetchRequest):
                 },
                 {
                     'title': 'Delhi-NCR Fog Alert: National Highway Authority Issues Speed Restrictions',
-                    'description': 'Dense fog on NH-44 and NH-48 prompted NHAI to restrict heavy vehicle speeds to 40 kmph. Chaukas platform issued automated ELEVATED severity alerts to 12,000+ users in the corridor.',
+                    'description': 'Dense fog on NH-44 and NH-48 prompted NHAI to restrict heavy vehicle speeds to 40 kmph. SURAKSHA-AI platform issued automated ELEVATED severity alerts to 12,000+ users in the corridor.',
                     'image_url': 'https://images.unsplash.com/photo-1547683905-f686c993aae5?w=600&h=400&fit=crop',
                     'source_name': 'Hindustan Times', 'article_url': 'https://hindustantimes.com/delhi-fog-alert-nh-2026',
                     'published_at': (datetime.datetime.now() - datetime.timedelta(hours=2)).isoformat(), 'category': 'General Alert', 'location_name': 'Delhi', 'latitude': 28.6139, 'longitude': 77.2090

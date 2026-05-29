@@ -1,4 +1,4 @@
-const CACHE_NAME = 'chaukas-v1';
+const CACHE_NAME = 'suraksha-ai_ai-v1';
 const ASSETS_TO_CACHE = [
     '/',
     '/index.html',

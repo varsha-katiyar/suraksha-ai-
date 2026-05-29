@@ -60,7 +60,7 @@ const Sidebar = () => {
                 </div>
                 {!collapsed && (
                     <div>
-                        <span className="text-sm font-bold text-white tracking-wide">CHAUKAS</span>
+                        <span className="text-sm font-bold text-white tracking-wide">SURAKSHA-AI</span>
                         <p className="text-[9px] text-gray-500 leading-none mt-0.5">Road Safety Command</p>
                     </div>
                 )}
@@ -133,7 +133,7 @@ const Sidebar = () => {
                     {!collapsed && (
                         <div className="flex-1 min-w-0">
                             <p className="text-xs font-medium text-gray-300 truncate">{user?.email?.split('@')[0] || 'Officer'}</p>
-                            <p className="text-[9px] text-gray-600 truncate">Chaukas Unit · Indore</p>
+                            <p className="text-[9px] text-gray-600 truncate">SURAKSHA-AI Unit · Indore</p>
                         </div>
                     )}
                     {!collapsed && (

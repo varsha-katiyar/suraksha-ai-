@@ -1,5 +1,5 @@
 @echo off
-echo Starting Chaukas Backend on http://localhost:8000 ...
+echo Starting SURAKSHA-AI Backend on http://localhost:8000 ...
 echo.
 if not exist .venv (
     echo ERROR: .venv not found. Run setup.bat first.

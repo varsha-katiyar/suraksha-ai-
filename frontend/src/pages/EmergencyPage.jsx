@@ -15,7 +15,7 @@ const EmergencyPage = () => {
                         Emergency<span className="text-red-600">.SOS</span>
                     </h1>
                     <p className="text-gray-400 text-sm font-mono uppercase tracking-widest">
-                        Chaukas — Road Accident Emergency Response
+                        SURAKSHA-AI — Road Accident Emergency Response
                     </p>
                 </div>
 

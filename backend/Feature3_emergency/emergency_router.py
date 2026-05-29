@@ -181,7 +181,7 @@ async def call_emergency_service(request: EmergencyCallRequest):
         # 5. (Optional) Send Confirmation SMS
         try:
             sms = client.messages.create(
-                body=f"🚨 Emergency request initiated for {service_type.upper()}. Help is being contacted. (From Chaukas)",
+                body=f"🚨 Emergency request initiated for {service_type.upper()}. Help is being contacted. (From SURAKSHA-AI)",
                 from_=TWILIO_PHONE_NUMBER,
                 to=destination_number 
             )

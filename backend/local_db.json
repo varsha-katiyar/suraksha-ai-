@@ -411,6 +411,39 @@
       "clustered": true,
       "created_at": "2026-05-26T10:35:20.756661",
       "cluster_id": "770dfa02-35db-4151-a665-2af74fc22184"
+    },
+    {
+      "id": "2f0c701e-dd7e-43cf-a8b5-54af6d61ac46",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "damage_type": "Pothole",
+      "description": "Huge crater in the middle of the road. Very dangerous.",
+      "is_verified": true,
+      "clustered": true,
+      "created_at": "2026-05-27T11:02:59.427605",
+      "cluster_id": "e70c9776-814a-485e-847b-134b6ec22891"
+    },
+    {
+      "id": "22aa9712-7daa-4c55-a867-6125b1b1a0f6",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "damage_type": "Pothole",
+      "description": "Huge crater in the middle of the road. Very dangerous.",
+      "is_verified": true,
+      "clustered": true,
+      "created_at": "2026-05-27T11:02:59.729447",
+      "cluster_id": "e70c9776-814a-485e-847b-134b6ec22891"
+    },
+    {
+      "id": "3a26dca4-5185-45e7-a30c-c40f630a22d3",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "damage_type": "Pothole",
+      "description": "Huge crater in the middle of the road. Very dangerous.",
+      "is_verified": true,
+      "clustered": true,
+      "created_at": "2026-05-27T11:03:00.204525",
+      "cluster_id": "e70c9776-814a-485e-847b-134b6ec22891"
     }
   ],
   "road_scar_clusters": [
@@ -490,6 +523,17 @@
         "40f98dfa-f2c1-4da5-813b-906278e5cc2f"
       ],
       "created_at": "2026-05-26T10:35:20.756661"
+    },
+    {
+      "id": "e70c9776-814a-485e-847b-134b6ec22891",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "reports": [
+        "2f0c701e-dd7e-43cf-a8b5-54af6d61ac46",
+        "22aa9712-7daa-4c55-a867-6125b1b1a0f6",
+        "3a26dca4-5185-45e7-a30c-c40f630a22d3"
+      ],
+      "created_at": "2026-05-27T11:03:00.205548"
     }
   ],
   "road_scar_drafts": [
@@ -505,7 +549,7 @@
       "pdf_url": "mock_pdf_url"
     },
     {
-      "id": "CHAUKAS-10242B0A",
+      "id": "SURAKSHA-AI-10242B0A",
       "cluster_id": "646273a4-8d5f-4ed2-897b-cf075e8e590d",
       "agency": "NHAI / PWD",
       "lat": 22.7196,
@@ -513,10 +557,10 @@
       "damage_type": "Pothole",
       "status": "Sent via Email",
       "created_at": "2026-05-23T19:01:13.331564",
-      "pdf_path": "uploads/complaint_CHAUKAS-10242B0A.pdf"
+      "pdf_path": "uploads/complaint_SURAKSHA-AI-10242B0A.pdf"
     },
     {
-      "id": "CHAUKAS-A838BB35",
+      "id": "SURAKSHA-AI-A838BB35",
       "cluster_id": "ce7198e7-6b7e-45e3-9f05-c53da09f1e88",
       "agency": "NHAI / PWD",
       "lat": 22.7196,
@@ -524,10 +568,10 @@
       "damage_type": "Pothole",
       "status": "Sent via Email",
       "created_at": "2026-05-25T10:24:37.732606",
-      "pdf_path": "uploads/complaint_CHAUKAS-A838BB35.pdf"
+      "pdf_path": "uploads/complaint_SURAKSHA-AI-A838BB35.pdf"
     },
     {
-      "id": "CHAUKAS-79B2C2C9",
+      "id": "SURAKSHA-AI-79B2C2C9",
       "cluster_id": "48216162-687b-4417-a5ac-1cc3bfa702f5",
       "agency": "NHAI / PWD",
       "lat": 22.7196,
@@ -535,10 +579,10 @@
       "damage_type": "Pothole",
       "status": "Sent via Email",
       "created_at": "2026-05-26T10:07:34.670305",
-      "pdf_path": "uploads/complaint_CHAUKAS-79B2C2C9.pdf"
+      "pdf_path": "uploads/complaint_SURAKSHA-AI-79B2C2C9.pdf"
     },
     {
-      "id": "CHAUKAS-4B22288E",
+      "id": "SURAKSHA-AI-4B22288E",
       "cluster_id": "afcf6981-60ba-4a2d-99b4-b4f780c95198",
       "agency": "NHAI / PWD",
       "lat": 22.7196,
@@ -546,10 +590,10 @@
       "damage_type": "Pothole",
       "status": "Sent via Email",
       "created_at": "2026-05-26T10:20:04.281771",
-      "pdf_path": "uploads/complaint_CHAUKAS-4B22288E.pdf"
+      "pdf_path": "uploads/complaint_SURAKSHA-AI-4B22288E.pdf"
     },
     {
-      "id": "CHAUKAS-5D341BB1",
+      "id": "SURAKSHA-AI-5D341BB1",
       "cluster_id": "a21cbfe5-19f4-4b3d-8eda-7bca01b456e1",
       "agency": "NHAI / PWD",
       "lat": 22.7196,
@@ -557,10 +601,10 @@
       "damage_type": "Pothole",
       "status": "Sent via Email",
       "created_at": "2026-05-26T10:35:03.215284",
-      "pdf_path": "uploads/complaint_CHAUKAS-5D341BB1.pdf"
+      "pdf_path": "uploads/complaint_SURAKSHA-AI-5D341BB1.pdf"
     },
     {
-      "id": "CHAUKAS-C962798C",
+      "id": "SURAKSHA-AI-C962798C",
       "cluster_id": "770dfa02-35db-4151-a665-2af74fc22184",
       "agency": "NHAI / PWD",
       "lat": 22.7196,
@@ -568,7 +612,18 @@
       "damage_type": "Pothole",
       "status": "Sent via Email",
       "created_at": "2026-05-26T10:35:24.589998",
-      "pdf_path": "uploads/complaint_CHAUKAS-C962798C.pdf"
+      "pdf_path": "uploads/complaint_SURAKSHA-AI-C962798C.pdf"
+    },
+    {
+      "id": "SURAKSHA-AI-A7E6B811",
+      "cluster_id": "e70c9776-814a-485e-847b-134b6ec22891",
+      "agency": "NHAI / PWD",
+      "lat": 22.7196,
+      "lon": 75.8577,
+      "damage_type": "Pothole",
+      "status": "Sent via Email",
+      "created_at": "2026-05-27T11:03:04.280649",
+      "pdf_path": "uploads/complaint_SURAKSHA-AI-A7E6B811.pdf"
     }
   ]
 }
